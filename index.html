@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivaji | The Common Man's Developer</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --bg-light: #f3f4f6;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: var(--primary);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        .card {
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-content {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        .about-box {
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-box p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            background-color: var(--text-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.25rem; }
+            .container { padding: 2rem 1rem; }
+            .about-box { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shivaji</h1>
+        <p>A Common Man Creating Practical Digital Solutions for Everyday Usage</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">Useful Websites Developed</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-icon">📋</div>
+                    <h3>Daily Task Planner</h3>
+                    <p>A lightweight, distraction-free application designed to help everyday people organize their morning routines and core responsibilities seamlessly.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-icon">💰</div>
+                    <h3>Simple Budget Tracker</h3>
+                    <p>An easy-to-use financial tool stripped of complex accounting jargon, enabling anyone to log daily expenses and balance their household income.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-icon">⚡</div>
+                    <h3>Quick Web Utilities</h3>
+                    <p>A curated collection of micro-tools featuring instant text formatting, unit converters, and secure password generation for rapid daily workflows.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Common Usage Designs</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-icon">📱</div>
+                    <h3>Intuitive Mobile UI</h3>
+                    <p>User interfaces engineered specifically for clarity, utilizing larger touch targets and high-contrast typography to ensure accessibility for all age groups.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-icon">🎨</div>
+                    <h3>Minimalist Print Templates</h3>
+                    <p>Clean, functional layouts for physical grocery lists, weekly schedules, and emergency contact sheets optimized to look sharp on any standard home printer.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-icon">🧱</div>
+                    <h3>Modular Component Kits</h3>
+                    <p>Flexible web layouts designed to scale beautifully across smartphones, tablets, and desktop monitors without unnecessary aesthetic clutter.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">The Philosophy</h2>
+        <div class="about-box">
+            <p><strong>Sivaji builds with a simple mission: technology should serve the common man.</strong> By focusing strictly on essential utility, clean ergonomics, and real-world necessity, his designs eliminate digital overhead to keep daily productivity straightforward and accessible to everyone.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sivaji. Handcrafted for utility and daily common usage.</p>
+    </footer>
+
+</body>
+</html>
